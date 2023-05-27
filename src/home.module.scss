@@ -1,0 +1,454 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 45px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.action_content {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#222, #000);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: #fff;
+    }
+
+    p {
+      color: #ddd;
+      margin: 15px 0 18px 0;
+    }
+
+    button {
+      width: 100%;
+      height: 45px;
+      font-size: 18px;
+      color: #fff;
+      background: linear-gradient(to bottom left, rgb(1, 99, 99), rgb(54, 223, 253));
+      border-radius: 30px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .book {
+    height: 340px;
+    border-radius: 10px;
+    margin-left: 60px;
+    cursor: pointer;
+    box-shadow: rgb(128, 202, 159) 0px 5px 15px;
+  }
+}
+
+.benefits_content {
+  width: 100%;
+  min-height: 67vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+
+  .title_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 13%;
+
+    h1 {
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: #222;
+    }
+  }
+
+  .benefits_cards_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 5px 25px 5px;
+
+    .card {
+      width: 225px;
+      height: 280px;
+      min-width: 220px;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 5px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+      .icon_content {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom left, rgb(1, 99, 99), rgb(54, 223, 253));
+        border-radius: 50%;
+      }
+  
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: darkcyan;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+  
+      span {
+        color: #222;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.cards_content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .depoiment_card {
+    width: 400px;
+    height: 170px;
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .image_content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+
+      .author {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .text_content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 20px 0 0;
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-size: 15px;
+      }
+
+      .stars {
+        width: 80px;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.person_content {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(to bottom left, rgb(1, 99, 99), rgb(54, 223, 253));
+
+  img {
+    width: 180px;
+    margin-right: 50px;
+  }
+
+  div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #f0f0f0;
+    }
+  }
+}
+
+.depoiments_content {
+  width: 100%;
+  min-height: 84vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  padding-bottom: 20px;
+
+  .depoiments_title_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+
+    h1 {
+      color: darkcyan;
+    }
+
+    p {
+      color: #222;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: black;
+
+  .content_footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+
+    img {
+      align-self: flex-start;
+      position: absolute;
+      left: 50px;
+    }
+
+    .infos_content {
+      width: 27%;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        color: darkcyan;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #f0f0f0;
+      }
+    }
+
+    hr {
+      width: 1px;
+      height: 200px;
+      background-color: #f0f0f0;
+      margin: 0 20px;
+    }
+
+    .contact_content {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: #f0f0f0;
+        margin-bottom: 12px;
+      }
+
+      strong {
+        font-size: 18px;
+        color: darkcyan;
+      }
+    }
+
+    .email_content {
+      width: 27%;
+      display: flex;
+      flex-direction: column;
+
+      h2, p {
+        margin-left: 6px;
+      }
+
+      h2 {
+        color: darkcyan;
+      }
+
+      p {
+        color: #f0f0f0;
+        margin-top: 3px;
+        margin-bottom: 15px;
+      }
+
+      input {
+        width: 100%;
+        height: 45px;
+        font-size: 15px;
+        background-color: #f0f0f0;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .bottom_footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    border-top: 1px solid #868585;
+
+    span {
+      font-size: 13px;
+      color: #ddd;
+    }
+
+    img {
+      width: 300px;
+    }
+  }
+}
+
+.top_button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(2, 75, 75);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #f0f0f0;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+}
+
+@media screen and (max-width: 800px) {
+  .action_content {
+    div {
+      width: 50%;
+    }
+
+    .book {
+      height: 200px;
+      margin-left: 20px;
+    }
+  }
+
+  .benefits_content {
+    .title_content {
+      padding: 15px 30px;
+    }
+  }
+
+  .person_content {  
+    img {
+      width: 170px;
+      margin-right: 20px;
+    }
+  
+    div {
+      width: 55%;
+  
+      h1 {
+        font-size: 25px;
+        margin-bottom: 5px;
+      }
+  
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  footer {  
+    .content_footer {
+      flex-direction: column;
+      padding: 20px 40px;
+  
+      .infos_content {
+        width: 100%;
+  
+        p {
+          font-size: 14px;
+        }
+      }
+  
+      hr {
+        width: 90%;
+        height: 1px;
+        margin: 15px 0;
+      }
+  
+      .contact_content {
+        span {
+          margin-bottom: 8px;
+        }
+  
+        strong {
+          font-size: 16px;
+        }
+      }
+  
+      .email_content {
+        width: 100%;
+
+        p {
+          margin-top: 2px;
+          margin-bottom: 12px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .bottom_footer {
+      img {
+        width: 220px;
+      }
+    }
+  }
+}
